@@ -2,7 +2,7 @@ import { QueryClient } from "@tanstack/react-query";
 
 import { getProductsAPI } from "./lib/query/product";
 
-import Products from "./products/Products";
+import Products from "./products/page";
 
 const Home = async () => {
   const queryClient = new QueryClient();

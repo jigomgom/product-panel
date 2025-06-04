@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 import ProductList from "../components/layer/list/ProductList";
 import ProductGrid from "../components/layer/grid/ProductGrid";
 
-import * as S from "./Products.styled";
+import * as S from "./page.styled";
 
 const Products = async () => {
   const cookieStore = await cookies();
