@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const COOKIE_KEY = "render";
-// const TTL_SECONDS = 60 * 60 * 24;
-const TTL_SECONDS = 10;
+const TTL_SECONDS = 60 * 60 * 24;
 
 export const middleware = (request: NextRequest) => {
   const cookie = request.cookies.get(COOKIE_KEY);
