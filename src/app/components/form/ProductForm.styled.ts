@@ -59,7 +59,7 @@ export const ErrorText = styled.span`
 
 export const SubmitButton = styled.button`
   ${({ theme }) => css`
-    background: ${theme.colors.blue10};
+    background-color: ${theme.colors.blue10};
     color: white;
     padding: 10px;
     border: none;
@@ -68,7 +68,7 @@ export const SubmitButton = styled.button`
     cursor: pointer;
 
     &:hover {
-      background: ${theme.colors.blue20};
+      background-color: ${theme.colors.blue20};
     }
 
     &:disabled {

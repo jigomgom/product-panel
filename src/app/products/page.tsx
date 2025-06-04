@@ -6,6 +6,8 @@ import ProductList from "../components/layer/list/ProductList";
 import ProductGrid from "../components/layer/grid/ProductGrid";
 
 import * as S from "./page.styled";
+import ProductListSkeleton from "../components/layer/list/ProductList.skeleton";
+import ProductGridSkeleton from "../components/layer/grid/ProductGrid.skeleton";
 
 const Products = async () => {
   const cookieStore = await cookies();
@@ -15,11 +17,11 @@ const Products = async () => {
 
   const renderer = () => {
     return selectedMode === "list" ? (
-      <Suspense>
+      <Suspense fallback={<ProductListSkeleton />}>
         <ProductList />
       </Suspense>
     ) : (
-      <Suspense>
+      <Suspense fallback={<ProductGridSkeleton />}>
         <ProductGrid />
       </Suspense>
     );

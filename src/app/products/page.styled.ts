@@ -11,7 +11,7 @@ export const Section = styled.section`
     border: 1px solid ${theme.colors.gray90};
     border-radius: 8px;
     padding: 32px;
-    background: ${theme.colors.white};
+    background-color: ${theme.colors.white};
   `}
 `;
 

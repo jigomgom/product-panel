@@ -27,7 +27,7 @@ const globalStyles = css`
 
   button {
     cursor: pointer;
-    background: none;
+    background-color: none;
     border: none;
     font: inherit;
     outline: none;
